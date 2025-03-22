@@ -1,9 +1,7 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get upgrade -y
-
-sudo apt-get install -y curl
+sudo apt update
+sudo apt upgrade -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh
 
