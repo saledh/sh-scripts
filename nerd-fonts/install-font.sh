@@ -17,12 +17,12 @@ wget -O "$TEMP_DIR/font.zip" "$DEFAULT"
 unzip "$TEMP_DIR/font.zip" -d "$TEMP_DIR"
 
 # Move the font files to the system fonts directory
-sudo mv "$TEMP_DIR"/*.{ttf,otf} /usr/local/share/fonts/
+mv "$TEMP_DIR"/*.{ttf,otf} /usr/local/share/fonts/
 
 # Update the font cache
 fc-cache -f -v
 
 # Clean up
-sudo rm -rf "$TEMP_DIR"
+rm -rf "$TEMP_DIR"
 
 echo "Fonts installed successfully!"
